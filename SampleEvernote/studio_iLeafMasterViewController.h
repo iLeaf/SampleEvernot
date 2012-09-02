@@ -12,6 +12,4 @@
 
 @interface studio_iLeafMasterViewController : UITableViewController
 
-@property (strong, nonatomic) studio_iLeafDetailViewController *detailViewController;
-
 @end

@@ -7,56 +7,40 @@
 //
 
 #import "studio_iLeafMasterViewController.h"
+#import "EvernoteSDK.h"
 
-#import "studio_iLeafDetailViewController.h"
+#define EVERNOTE_HOST   @"sandbox.evernote.com"
+#define CONSUMER_KEY    @"ahirasugi-3815"   // Consumer key
+#define CONSUMER_SECRET @"6e8148859b98b313"  // Consumer secret
 
-@interface studio_iLeafMasterViewController () {
-    NSMutableArray *_objects;
-}
+@interface studio_iLeafMasterViewController ()
 @end
 
-@implementation studio_iLeafMasterViewController
 
-@synthesize detailViewController = _detailViewController;
+@implementation studio_iLeafMasterViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Master", @"Master");
+        self.title = @"Evernote OAuth";
     }
     return self;
 }
-							
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-}
-
-- (void)insertNewObject:(id)sender
-{
-    if (!_objects) {
-        _objects = [[NSMutableArray alloc] init];
-    }
-    [_objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 #pragma mark - Table View
@@ -68,7 +52,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    return 3;
 }
 
 // Customize the appearance of table view cells.
@@ -81,53 +65,79 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-
-
-    NSDate *object = [_objects objectAtIndex:indexPath.row];
-    cell.textLabel.text = [object description];
+    
+    switch ([indexPath row]) {
+        case 0:
+            cell.textLabel.text = @"Evernote OAuth 認証";
+            break;
+        case 1:
+            cell.textLabel.text = @"Logout";
+            break;
+        default:
+            cell.textLabel.text = @"Evernote にノートを送る";
+            break;
+    }
+    
     return cell;
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_objects removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }
-}
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (!self.detailViewController) {
-        self.detailViewController = [[studio_iLeafDetailViewController alloc] initWithNibName:@"studio_iLeafDetailViewController" bundle:nil];
+    switch ([indexPath row]) {
+        case 0:
+            [self login];
+            break;
+        case 1:
+            [self logout];
+            break;
+        default:
+            [self sendEvernote];
+            break;
     }
-    NSDate *object = [_objects objectAtIndex:indexPath.row];
-    self.detailViewController.detailItem = object;
-    [self.navigationController pushViewController:self.detailViewController animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void)login
+{
+    [EvernoteSession setSharedSessionHost:EVERNOTE_HOST consumerKey:CONSUMER_KEY consumerSecret:CONSUMER_SECRET];
+    
+    EvernoteSession *session = [EvernoteSession sharedSession];
+    [session authenticateWithViewController:self completionHandler:^(NSError *error) {
+        if (error || !session.isAuthenticated) {
+            NSLog(@"Error: Could not authenticate");
+        } else {
+            NSLog(@"Authenticated!");
+        } 
+    }];
+}
+
+- (void)logout
+{
+    [[EvernoteSession sharedSession] logout];
+}
+
+- (void)sendEvernote
+{
+    EDAMNote *note = [[EDAMNote alloc] init];
+    //note.title = @"note.title";
+    //note.content = @"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE en-note SYSTEM \"http://xml.evernote.com/pub/enml2.dtd\">\n<en-note>note.content</en-note>";
+    
+    note.title = @"とある地点の住所";
+    note.content = @"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE en-note SYSTEM \"http://xml.evernote.com/pub/enml2.dtd\">\n<en-note>地図の画像とリンク</en-note>";
+    
+    EvernoteNoteStore *noteStore = [EvernoteNoteStore noteStore];
+    
+    @try {
+        [noteStore createNote:note success:^(EDAMNote *note) {} failure:^(NSError *error) {
+            //NSLog(@"Error: %@", error);                                            
+            NSLog(@"書き込めませんでした。ネット環境をご確認ください。");
+        }];
+    }
+    @catch (EDAMUserException *e) {
+        return;
+    }
+    
+    NSLog(@"Note was saved.");
 }
 
 @end
