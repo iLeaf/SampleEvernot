@@ -18,11 +18,8 @@
 		87542BA615F36ADC0057EF75 /* studio_iLeafMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87542BA415F36ADC0057EF75 /* studio_iLeafMasterViewController.xib */; };
 		87542BA915F36ADC0057EF75 /* studio_iLeafDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87542BA715F36ADC0057EF75 /* studio_iLeafDetailViewController.xib */; };
 		87542BFF15F36E430057EF75 /* GCOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BBB15F36E430057EF75 /* GCOAuth.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		87542C0015F36E430057EF75 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 87542BBC15F36E430057EF75 /* LICENSE */; };
 		87542C0115F36E430057EF75 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BBE15F36E430057EF75 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		87542C0215F36E430057EF75 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 87542BC015F36E430057EF75 /* LICENSE */; };
 		87542C0315F36E430057EF75 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BC215F36E430057EF75 /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		87542C0415F36E430057EF75 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 87542BC415F36E430057EF75 /* LICENSE */; };
 		87542C0515F36E430057EF75 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BC615F36E430057EF75 /* SSKeychain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		87542C0615F36E430057EF75 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 87542BC815F36E430057EF75 /* LICENSE */; };
 		87542C0715F36E430057EF75 /* TBinaryProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BCB15F36E430057EF75 /* TBinaryProtocol.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -68,13 +65,10 @@
 		87542BA815F36ADC0057EF75 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/studio_iLeafDetailViewController.xib; sourceTree = "<group>"; };
 		87542BBA15F36E430057EF75 /* GCOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCOAuth.h; sourceTree = "<group>"; };
 		87542BBB15F36E430057EF75 /* GCOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCOAuth.m; sourceTree = "<group>"; };
-		87542BBC15F36E430057EF75 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		87542BBD15F36E430057EF75 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		87542BBE15F36E430057EF75 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		87542BC015F36E430057EF75 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		87542BC115F36E430057EF75 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
 		87542BC215F36E430057EF75 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
-		87542BC415F36E430057EF75 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		87542BC515F36E430057EF75 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
 		87542BC615F36E430057EF75 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
 		87542BC815F36E430057EF75 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -237,7 +231,6 @@
 			children = (
 				87542BBA15F36E430057EF75 /* GCOAuth.h */,
 				87542BBB15F36E430057EF75 /* GCOAuth.m */,
-				87542BBC15F36E430057EF75 /* LICENSE */,
 				87542BBD15F36E430057EF75 /* NSData+Base64.h */,
 				87542BBE15F36E430057EF75 /* NSData+Base64.m */,
 			);
@@ -247,7 +240,6 @@
 		87542BBF15F36E430057EF75 /* NSString+URLEncoding */ = {
 			isa = PBXGroup;
 			children = (
-				87542BC015F36E430057EF75 /* LICENSE */,
 				87542BC115F36E430057EF75 /* NSString+URLEncoding.h */,
 				87542BC215F36E430057EF75 /* NSString+URLEncoding.m */,
 			);
@@ -257,7 +249,6 @@
 		87542BC315F36E430057EF75 /* SSKeychain */ = {
 			isa = PBXGroup;
 			children = (
-				87542BC415F36E430057EF75 /* LICENSE */,
 				87542BC515F36E430057EF75 /* SSKeychain.h */,
 				87542BC615F36E430057EF75 /* SSKeychain.m */,
 			);
@@ -397,9 +388,6 @@
 				87542B9715F36ADB0057EF75 /* InfoPlist.strings in Resources */,
 				87542BA615F36ADC0057EF75 /* studio_iLeafMasterViewController.xib in Resources */,
 				87542BA915F36ADC0057EF75 /* studio_iLeafDetailViewController.xib in Resources */,
-				87542C0015F36E430057EF75 /* LICENSE in Resources */,
-				87542C0215F36E430057EF75 /* LICENSE in Resources */,
-				87542C0415F36E430057EF75 /* LICENSE in Resources */,
 				87542C0615F36E430057EF75 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
