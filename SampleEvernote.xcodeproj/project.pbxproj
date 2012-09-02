@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87542B8D15F36ADB0057EF75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87542B8C15F36ADB0057EF75 /* UIKit.framework */; };
+		87542B8F15F36ADB0057EF75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87542B8E15F36ADB0057EF75 /* Foundation.framework */; };
+		87542B9115F36ADB0057EF75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87542B9015F36ADB0057EF75 /* CoreGraphics.framework */; };
+		87542B9715F36ADB0057EF75 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87542B9515F36ADB0057EF75 /* InfoPlist.strings */; };
+		87542B9915F36ADB0057EF75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542B9815F36ADB0057EF75 /* main.m */; };
+		87542B9D15F36ADB0057EF75 /* studio_iLeafAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542B9C15F36ADB0057EF75 /* studio_iLeafAppDelegate.m */; };
+		87542BA015F36ADB0057EF75 /* studio_iLeafMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542B9F15F36ADB0057EF75 /* studio_iLeafMasterViewController.m */; };
+		87542BA315F36ADC0057EF75 /* studio_iLeafDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BA215F36ADC0057EF75 /* studio_iLeafDetailViewController.m */; };
+		87542BA615F36ADC0057EF75 /* studio_iLeafMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87542BA415F36ADC0057EF75 /* studio_iLeafMasterViewController.xib */; };
+		87542BA915F36ADC0057EF75 /* studio_iLeafDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87542BA715F36ADC0057EF75 /* studio_iLeafDetailViewController.xib */; };
+		87542BFF15F36E430057EF75 /* GCOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BBB15F36E430057EF75 /* GCOAuth.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C0015F36E430057EF75 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 87542BBC15F36E430057EF75 /* LICENSE */; };
+		87542C0115F36E430057EF75 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BBE15F36E430057EF75 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C0215F36E430057EF75 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 87542BC015F36E430057EF75 /* LICENSE */; };
+		87542C0315F36E430057EF75 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BC215F36E430057EF75 /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C0415F36E430057EF75 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 87542BC415F36E430057EF75 /* LICENSE */; };
+		87542C0515F36E430057EF75 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BC615F36E430057EF75 /* SSKeychain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C0615F36E430057EF75 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 87542BC815F36E430057EF75 /* LICENSE */; };
+		87542C0715F36E430057EF75 /* TBinaryProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BCB15F36E430057EF75 /* TBinaryProtocol.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C0815F36E430057EF75 /* TProtocolException.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BCE15F36E430057EF75 /* TProtocolException.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C0915F36E430057EF75 /* TProtocolUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BD115F36E430057EF75 /* TProtocolUtil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C0A15F36E430057EF75 /* TApplicationException.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BD315F36E430057EF75 /* TApplicationException.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C0B15F36E430057EF75 /* TException.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BD515F36E430057EF75 /* TException.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C0C15F36E430057EF75 /* THTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BDB15F36E430057EF75 /* THTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C0D15F36E430057EF75 /* TMemoryBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BDD15F36E430057EF75 /* TMemoryBuffer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C0E15F36E430057EF75 /* TTransportException.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BE015F36E430057EF75 /* TTransportException.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C0F15F36E430057EF75 /* EDAMErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BE415F36E430057EF75 /* EDAMErrors.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C1015F36E430057EF75 /* EDAMLimits.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BE615F36E430057EF75 /* EDAMLimits.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C1115F36E430057EF75 /* EDAMNoteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BE815F36E430057EF75 /* EDAMNoteStore.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C1215F36E430057EF75 /* EDAMTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BEA15F36E430057EF75 /* EDAMTypes.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C1315F36E430057EF75 /* EDAMUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BEC15F36E430057EF75 /* EDAMUserStore.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C1415F36E430057EF75 /* EvernoteNoteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BEF15F36E430057EF75 /* EvernoteNoteStore.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C1515F36E430057EF75 /* EvernoteSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BF115F36E430057EF75 /* EvernoteSDK.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C1615F36E430057EF75 /* EvernoteSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BF315F36E430057EF75 /* EvernoteSession.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C1715F36E430057EF75 /* EvernoteUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BF515F36E430057EF75 /* EvernoteUserStore.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C1815F36E430057EF75 /* ENAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BF815F36E430057EF75 /* ENAPI.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C1915F36E430057EF75 /* ENCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BFA15F36E430057EF75 /* ENCredentials.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C1A15F36E430057EF75 /* ENCredentialStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BFC15F36E430057EF75 /* ENCredentialStore.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C1B15F36E430057EF75 /* ENOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87542BFE15F36E430057EF75 /* ENOAuthViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87542C1E15F36F530057EF75 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87542C1D15F36F530057EF75 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		87542B8815F36ADB0057EF75 /* SampleEvernote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleEvernote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87542B8C15F36ADB0057EF75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		87542B8E15F36ADB0057EF75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		87542B9015F36ADB0057EF75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		87542B9415F36ADB0057EF75 /* SampleEvernote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleEvernote-Info.plist"; sourceTree = "<group>"; };
+		87542B9615F36ADB0057EF75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		87542B9815F36ADB0057EF75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		87542B9A15F36ADB0057EF75 /* SampleEvernote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleEvernote-Prefix.pch"; sourceTree = "<group>"; };
+		87542B9B15F36ADB0057EF75 /* studio_iLeafAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = studio_iLeafAppDelegate.h; sourceTree = "<group>"; };
+		87542B9C15F36ADB0057EF75 /* studio_iLeafAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = studio_iLeafAppDelegate.m; sourceTree = "<group>"; };
+		87542B9E15F36ADB0057EF75 /* studio_iLeafMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = studio_iLeafMasterViewController.h; sourceTree = "<group>"; };
+		87542B9F15F36ADB0057EF75 /* studio_iLeafMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = studio_iLeafMasterViewController.m; sourceTree = "<group>"; };
+		87542BA115F36ADB0057EF75 /* studio_iLeafDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = studio_iLeafDetailViewController.h; sourceTree = "<group>"; };
+		87542BA215F36ADC0057EF75 /* studio_iLeafDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = studio_iLeafDetailViewController.m; sourceTree = "<group>"; };
+		87542BA515F36ADC0057EF75 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/studio_iLeafMasterViewController.xib; sourceTree = "<group>"; };
+		87542BA815F36ADC0057EF75 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/studio_iLeafDetailViewController.xib; sourceTree = "<group>"; };
+		87542BBA15F36E430057EF75 /* GCOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCOAuth.h; sourceTree = "<group>"; };
+		87542BBB15F36E430057EF75 /* GCOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCOAuth.m; sourceTree = "<group>"; };
+		87542BBC15F36E430057EF75 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		87542BBD15F36E430057EF75 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		87542BBE15F36E430057EF75 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		87542BC015F36E430057EF75 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		87542BC115F36E430057EF75 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		87542BC215F36E430057EF75 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		87542BC415F36E430057EF75 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		87542BC515F36E430057EF75 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		87542BC615F36E430057EF75 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		87542BC815F36E430057EF75 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		87542BCA15F36E430057EF75 /* TBinaryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBinaryProtocol.h; sourceTree = "<group>"; };
+		87542BCB15F36E430057EF75 /* TBinaryProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBinaryProtocol.m; sourceTree = "<group>"; };
+		87542BCC15F36E430057EF75 /* TProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocol.h; sourceTree = "<group>"; };
+		87542BCD15F36E430057EF75 /* TProtocolException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolException.h; sourceTree = "<group>"; };
+		87542BCE15F36E430057EF75 /* TProtocolException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TProtocolException.m; sourceTree = "<group>"; };
+		87542BCF15F36E430057EF75 /* TProtocolFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolFactory.h; sourceTree = "<group>"; };
+		87542BD015F36E430057EF75 /* TProtocolUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolUtil.h; sourceTree = "<group>"; };
+		87542BD115F36E430057EF75 /* TProtocolUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TProtocolUtil.m; sourceTree = "<group>"; };
+		87542BD215F36E430057EF75 /* TApplicationException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TApplicationException.h; sourceTree = "<group>"; };
+		87542BD315F36E430057EF75 /* TApplicationException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TApplicationException.m; sourceTree = "<group>"; };
+		87542BD415F36E430057EF75 /* TException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TException.h; sourceTree = "<group>"; };
+		87542BD515F36E430057EF75 /* TException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TException.m; sourceTree = "<group>"; };
+		87542BD615F36E430057EF75 /* Thrift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thrift.h; sourceTree = "<group>"; };
+		87542BD715F36E430057EF75 /* TProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProcessor.h; sourceTree = "<group>"; };
+		87542BD815F36E430057EF75 /* TProcessorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProcessorFactory.h; sourceTree = "<group>"; };
+		87542BDA15F36E430057EF75 /* THTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTTPClient.h; sourceTree = "<group>"; };
+		87542BDB15F36E430057EF75 /* THTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTTPClient.m; sourceTree = "<group>"; };
+		87542BDC15F36E430057EF75 /* TMemoryBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMemoryBuffer.h; sourceTree = "<group>"; };
+		87542BDD15F36E430057EF75 /* TMemoryBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMemoryBuffer.m; sourceTree = "<group>"; };
+		87542BDE15F36E430057EF75 /* TTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTransport.h; sourceTree = "<group>"; };
+		87542BDF15F36E430057EF75 /* TTransportException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTransportException.h; sourceTree = "<group>"; };
+		87542BE015F36E430057EF75 /* TTransportException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTransportException.m; sourceTree = "<group>"; };
+		87542BE215F36E430057EF75 /* EDAM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAM.h; sourceTree = "<group>"; };
+		87542BE315F36E430057EF75 /* EDAMErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMErrors.h; sourceTree = "<group>"; };
+		87542BE415F36E430057EF75 /* EDAMErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMErrors.m; sourceTree = "<group>"; };
+		87542BE515F36E430057EF75 /* EDAMLimits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMLimits.h; sourceTree = "<group>"; };
+		87542BE615F36E430057EF75 /* EDAMLimits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMLimits.m; sourceTree = "<group>"; };
+		87542BE715F36E430057EF75 /* EDAMNoteStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMNoteStore.h; sourceTree = "<group>"; };
+		87542BE815F36E430057EF75 /* EDAMNoteStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMNoteStore.m; sourceTree = "<group>"; };
+		87542BE915F36E430057EF75 /* EDAMTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMTypes.h; sourceTree = "<group>"; };
+		87542BEA15F36E430057EF75 /* EDAMTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMTypes.m; sourceTree = "<group>"; };
+		87542BEB15F36E430057EF75 /* EDAMUserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDAMUserStore.h; sourceTree = "<group>"; };
+		87542BEC15F36E430057EF75 /* EDAMUserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDAMUserStore.m; sourceTree = "<group>"; };
+		87542BED15F36E430057EF75 /* evernote-sdk-ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "evernote-sdk-ios-Prefix.pch"; sourceTree = "<group>"; };
+		87542BEE15F36E430057EF75 /* EvernoteNoteStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvernoteNoteStore.h; sourceTree = "<group>"; };
+		87542BEF15F36E430057EF75 /* EvernoteNoteStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvernoteNoteStore.m; sourceTree = "<group>"; };
+		87542BF015F36E430057EF75 /* EvernoteSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvernoteSDK.h; sourceTree = "<group>"; };
+		87542BF115F36E430057EF75 /* EvernoteSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvernoteSDK.m; sourceTree = "<group>"; };
+		87542BF215F36E430057EF75 /* EvernoteSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvernoteSession.h; sourceTree = "<group>"; };
+		87542BF315F36E430057EF75 /* EvernoteSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvernoteSession.m; sourceTree = "<group>"; };
+		87542BF415F36E430057EF75 /* EvernoteUserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvernoteUserStore.h; sourceTree = "<group>"; };
+		87542BF515F36E430057EF75 /* EvernoteUserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvernoteUserStore.m; sourceTree = "<group>"; };
+		87542BF715F36E430057EF75 /* ENAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENAPI.h; sourceTree = "<group>"; };
+		87542BF815F36E430057EF75 /* ENAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENAPI.m; sourceTree = "<group>"; };
+		87542BF915F36E430057EF75 /* ENCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENCredentials.h; sourceTree = "<group>"; };
+		87542BFA15F36E430057EF75 /* ENCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENCredentials.m; sourceTree = "<group>"; };
+		87542BFB15F36E430057EF75 /* ENCredentialStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENCredentialStore.h; sourceTree = "<group>"; };
+		87542BFC15F36E430057EF75 /* ENCredentialStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENCredentialStore.m; sourceTree = "<group>"; };
+		87542BFD15F36E430057EF75 /* ENOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENOAuthViewController.h; sourceTree = "<group>"; };
+		87542BFE15F36E430057EF75 /* ENOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENOAuthViewController.m; sourceTree = "<group>"; };
+		87542C1D15F36F530057EF75 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87542B8515F36ADB0057EF75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87542C1E15F36F530057EF75 /* Security.framework in Frameworks */,
+				87542B8D15F36ADB0057EF75 /* UIKit.framework in Frameworks */,
+				87542B8F15F36ADB0057EF75 /* Foundation.framework in Frameworks */,
+				87542B9115F36ADB0057EF75 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87542B7D15F36ADB0057EF75 = {
+			isa = PBXGroup;
+			children = (
+				87542C1D15F36F530057EF75 /* Security.framework */,
+				87542B9215F36ADB0057EF75 /* SampleEvernote */,
+				87542B8B15F36ADB0057EF75 /* Frameworks */,
+				87542B8915F36ADB0057EF75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87542B8915F36ADB0057EF75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87542B8815F36ADB0057EF75 /* SampleEvernote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87542B8B15F36ADB0057EF75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87542B8C15F36ADB0057EF75 /* UIKit.framework */,
+				87542B8E15F36ADB0057EF75 /* Foundation.framework */,
+				87542B9015F36ADB0057EF75 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87542B9215F36ADB0057EF75 /* SampleEvernote */ = {
+			isa = PBXGroup;
+			children = (
+				87542BB715F36E430057EF75 /* evernote-sdk-ios */,
+				87542B9B15F36ADB0057EF75 /* studio_iLeafAppDelegate.h */,
+				87542B9C15F36ADB0057EF75 /* studio_iLeafAppDelegate.m */,
+				87542B9E15F36ADB0057EF75 /* studio_iLeafMasterViewController.h */,
+				87542B9F15F36ADB0057EF75 /* studio_iLeafMasterViewController.m */,
+				87542BA115F36ADB0057EF75 /* studio_iLeafDetailViewController.h */,
+				87542BA215F36ADC0057EF75 /* studio_iLeafDetailViewController.m */,
+				87542BA415F36ADC0057EF75 /* studio_iLeafMasterViewController.xib */,
+				87542BA715F36ADC0057EF75 /* studio_iLeafDetailViewController.xib */,
+				87542B9315F36ADB0057EF75 /* Supporting Files */,
+			);
+			path = SampleEvernote;
+			sourceTree = "<group>";
+		};
+		87542B9315F36ADB0057EF75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87542B9415F36ADB0057EF75 /* SampleEvernote-Info.plist */,
+				87542B9515F36ADB0057EF75 /* InfoPlist.strings */,
+				87542B9815F36ADB0057EF75 /* main.m */,
+				87542B9A15F36ADB0057EF75 /* SampleEvernote-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87542BB715F36E430057EF75 /* evernote-sdk-ios */ = {
+			isa = PBXGroup;
+			children = (
+				87542BB815F36E430057EF75 /* 3rdParty */,
+				87542BE115F36E430057EF75 /* EDAM */,
+				87542BED15F36E430057EF75 /* evernote-sdk-ios-Prefix.pch */,
+				87542BEE15F36E430057EF75 /* EvernoteNoteStore.h */,
+				87542BEF15F36E430057EF75 /* EvernoteNoteStore.m */,
+				87542BF015F36E430057EF75 /* EvernoteSDK.h */,
+				87542BF115F36E430057EF75 /* EvernoteSDK.m */,
+				87542BF215F36E430057EF75 /* EvernoteSession.h */,
+				87542BF315F36E430057EF75 /* EvernoteSession.m */,
+				87542BF415F36E430057EF75 /* EvernoteUserStore.h */,
+				87542BF515F36E430057EF75 /* EvernoteUserStore.m */,
+				87542BF615F36E430057EF75 /* internal */,
+			);
+			path = "evernote-sdk-ios";
+			sourceTree = "<group>";
+		};
+		87542BB815F36E430057EF75 /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				87542BB915F36E430057EF75 /* cocoa-oauth */,
+				87542BBF15F36E430057EF75 /* NSString+URLEncoding */,
+				87542BC315F36E430057EF75 /* SSKeychain */,
+				87542BC715F36E430057EF75 /* Thrift */,
+			);
+			path = 3rdParty;
+			sourceTree = "<group>";
+		};
+		87542BB915F36E430057EF75 /* cocoa-oauth */ = {
+			isa = PBXGroup;
+			children = (
+				87542BBA15F36E430057EF75 /* GCOAuth.h */,
+				87542BBB15F36E430057EF75 /* GCOAuth.m */,
+				87542BBC15F36E430057EF75 /* LICENSE */,
+				87542BBD15F36E430057EF75 /* NSData+Base64.h */,
+				87542BBE15F36E430057EF75 /* NSData+Base64.m */,
+			);
+			path = "cocoa-oauth";
+			sourceTree = "<group>";
+		};
+		87542BBF15F36E430057EF75 /* NSString+URLEncoding */ = {
+			isa = PBXGroup;
+			children = (
+				87542BC015F36E430057EF75 /* LICENSE */,
+				87542BC115F36E430057EF75 /* NSString+URLEncoding.h */,
+				87542BC215F36E430057EF75 /* NSString+URLEncoding.m */,
+			);
+			path = "NSString+URLEncoding";
+			sourceTree = "<group>";
+		};
+		87542BC315F36E430057EF75 /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				87542BC415F36E430057EF75 /* LICENSE */,
+				87542BC515F36E430057EF75 /* SSKeychain.h */,
+				87542BC615F36E430057EF75 /* SSKeychain.m */,
+			);
+			path = SSKeychain;
+			sourceTree = "<group>";
+		};
+		87542BC715F36E430057EF75 /* Thrift */ = {
+			isa = PBXGroup;
+			children = (
+				87542BC815F36E430057EF75 /* LICENSE */,
+				87542BC915F36E430057EF75 /* protocol */,
+				87542BD215F36E430057EF75 /* TApplicationException.h */,
+				87542BD315F36E430057EF75 /* TApplicationException.m */,
+				87542BD415F36E430057EF75 /* TException.h */,
+				87542BD515F36E430057EF75 /* TException.m */,
+				87542BD615F36E430057EF75 /* Thrift.h */,
+				87542BD715F36E430057EF75 /* TProcessor.h */,
+				87542BD815F36E430057EF75 /* TProcessorFactory.h */,
+				87542BD915F36E430057EF75 /* transport */,
+			);
+			path = Thrift;
+			sourceTree = "<group>";
+		};
+		87542BC915F36E430057EF75 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				87542BCA15F36E430057EF75 /* TBinaryProtocol.h */,
+				87542BCB15F36E430057EF75 /* TBinaryProtocol.m */,
+				87542BCC15F36E430057EF75 /* TProtocol.h */,
+				87542BCD15F36E430057EF75 /* TProtocolException.h */,
+				87542BCE15F36E430057EF75 /* TProtocolException.m */,
+				87542BCF15F36E430057EF75 /* TProtocolFactory.h */,
+				87542BD015F36E430057EF75 /* TProtocolUtil.h */,
+				87542BD115F36E430057EF75 /* TProtocolUtil.m */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		87542BD915F36E430057EF75 /* transport */ = {
+			isa = PBXGroup;
+			children = (
+				87542BDA15F36E430057EF75 /* THTTPClient.h */,
+				87542BDB15F36E430057EF75 /* THTTPClient.m */,
+				87542BDC15F36E430057EF75 /* TMemoryBuffer.h */,
+				87542BDD15F36E430057EF75 /* TMemoryBuffer.m */,
+				87542BDE15F36E430057EF75 /* TTransport.h */,
+				87542BDF15F36E430057EF75 /* TTransportException.h */,
+				87542BE015F36E430057EF75 /* TTransportException.m */,
+			);
+			path = transport;
+			sourceTree = "<group>";
+		};
+		87542BE115F36E430057EF75 /* EDAM */ = {
+			isa = PBXGroup;
+			children = (
+				87542BE215F36E430057EF75 /* EDAM.h */,
+				87542BE315F36E430057EF75 /* EDAMErrors.h */,
+				87542BE415F36E430057EF75 /* EDAMErrors.m */,
+				87542BE515F36E430057EF75 /* EDAMLimits.h */,
+				87542BE615F36E430057EF75 /* EDAMLimits.m */,
+				87542BE715F36E430057EF75 /* EDAMNoteStore.h */,
+				87542BE815F36E430057EF75 /* EDAMNoteStore.m */,
+				87542BE915F36E430057EF75 /* EDAMTypes.h */,
+				87542BEA15F36E430057EF75 /* EDAMTypes.m */,
+				87542BEB15F36E430057EF75 /* EDAMUserStore.h */,
+				87542BEC15F36E430057EF75 /* EDAMUserStore.m */,
+			);
+			path = EDAM;
+			sourceTree = "<group>";
+		};
+		87542BF615F36E430057EF75 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				87542BF715F36E430057EF75 /* ENAPI.h */,
+				87542BF815F36E430057EF75 /* ENAPI.m */,
+				87542BF915F36E430057EF75 /* ENCredentials.h */,
+				87542BFA15F36E430057EF75 /* ENCredentials.m */,
+				87542BFB15F36E430057EF75 /* ENCredentialStore.h */,
+				87542BFC15F36E430057EF75 /* ENCredentialStore.m */,
+				87542BFD15F36E430057EF75 /* ENOAuthViewController.h */,
+				87542BFE15F36E430057EF75 /* ENOAuthViewController.m */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87542B8715F36ADB0057EF75 /* SampleEvernote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87542BAC15F36ADC0057EF75 /* Build configuration list for PBXNativeTarget "SampleEvernote" */;
+			buildPhases = (
+				87542B8415F36ADB0057EF75 /* Sources */,
+				87542B8515F36ADB0057EF75 /* Frameworks */,
+				87542B8615F36ADB0057EF75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleEvernote;
+			productName = SampleEvernote;
+			productReference = 87542B8815F36ADB0057EF75 /* SampleEvernote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87542B7F15F36ADB0057EF75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = studio.iLeaf;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 87542B8215F36ADB0057EF75 /* Build configuration list for PBXProject "SampleEvernote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 87542B7D15F36ADB0057EF75;
+			productRefGroup = 87542B8915F36ADB0057EF75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87542B8715F36ADB0057EF75 /* SampleEvernote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87542B8615F36ADB0057EF75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87542B9715F36ADB0057EF75 /* InfoPlist.strings in Resources */,
+				87542BA615F36ADC0057EF75 /* studio_iLeafMasterViewController.xib in Resources */,
+				87542BA915F36ADC0057EF75 /* studio_iLeafDetailViewController.xib in Resources */,
+				87542C0015F36E430057EF75 /* LICENSE in Resources */,
+				87542C0215F36E430057EF75 /* LICENSE in Resources */,
+				87542C0415F36E430057EF75 /* LICENSE in Resources */,
+				87542C0615F36E430057EF75 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87542B8415F36ADB0057EF75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87542B9915F36ADB0057EF75 /* main.m in Sources */,
+				87542B9D15F36ADB0057EF75 /* studio_iLeafAppDelegate.m in Sources */,
+				87542BA015F36ADB0057EF75 /* studio_iLeafMasterViewController.m in Sources */,
+				87542BA315F36ADC0057EF75 /* studio_iLeafDetailViewController.m in Sources */,
+				87542BFF15F36E430057EF75 /* GCOAuth.m in Sources */,
+				87542C0115F36E430057EF75 /* NSData+Base64.m in Sources */,
+				87542C0315F36E430057EF75 /* NSString+URLEncoding.m in Sources */,
+				87542C0515F36E430057EF75 /* SSKeychain.m in Sources */,
+				87542C0715F36E430057EF75 /* TBinaryProtocol.m in Sources */,
+				87542C0815F36E430057EF75 /* TProtocolException.m in Sources */,
+				87542C0915F36E430057EF75 /* TProtocolUtil.m in Sources */,
+				87542C0A15F36E430057EF75 /* TApplicationException.m in Sources */,
+				87542C0B15F36E430057EF75 /* TException.m in Sources */,
+				87542C0C15F36E430057EF75 /* THTTPClient.m in Sources */,
+				87542C0D15F36E430057EF75 /* TMemoryBuffer.m in Sources */,
+				87542C0E15F36E430057EF75 /* TTransportException.m in Sources */,
+				87542C0F15F36E430057EF75 /* EDAMErrors.m in Sources */,
+				87542C1015F36E430057EF75 /* EDAMLimits.m in Sources */,
+				87542C1115F36E430057EF75 /* EDAMNoteStore.m in Sources */,
+				87542C1215F36E430057EF75 /* EDAMTypes.m in Sources */,
+				87542C1315F36E430057EF75 /* EDAMUserStore.m in Sources */,
+				87542C1415F36E430057EF75 /* EvernoteNoteStore.m in Sources */,
+				87542C1515F36E430057EF75 /* EvernoteSDK.m in Sources */,
+				87542C1615F36E430057EF75 /* EvernoteSession.m in Sources */,
+				87542C1715F36E430057EF75 /* EvernoteUserStore.m in Sources */,
+				87542C1815F36E430057EF75 /* ENAPI.m in Sources */,
+				87542C1915F36E430057EF75 /* ENCredentials.m in Sources */,
+				87542C1A15F36E430057EF75 /* ENCredentialStore.m in Sources */,
+				87542C1B15F36E430057EF75 /* ENOAuthViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		87542B9515F36ADB0057EF75 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87542B9615F36ADB0057EF75 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		87542BA415F36ADC0057EF75 /* studio_iLeafMasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87542BA515F36ADC0057EF75 /* en */,
+			);
+			name = studio_iLeafMasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		87542BA715F36ADC0057EF75 /* studio_iLeafDetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87542BA815F36ADC0057EF75 /* en */,
+			);
+			name = studio_iLeafDetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87542BAA15F36ADC0057EF75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		87542BAB15F36ADC0057EF75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87542BAD15F36ADC0057EF75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SampleEvernote/SampleEvernote-Prefix.pch";
+				INFOPLIST_FILE = "SampleEvernote/SampleEvernote-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		87542BAE15F36ADC0057EF75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SampleEvernote/SampleEvernote-Prefix.pch";
+				INFOPLIST_FILE = "SampleEvernote/SampleEvernote-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87542B8215F36ADB0057EF75 /* Build configuration list for PBXProject "SampleEvernote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87542BAA15F36ADC0057EF75 /* Debug */,
+				87542BAB15F36ADC0057EF75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87542BAC15F36ADC0057EF75 /* Build configuration list for PBXNativeTarget "SampleEvernote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87542BAD15F36ADC0057EF75 /* Debug */,
+				87542BAE15F36ADC0057EF75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87542B7F15F36ADB0057EF75 /* Project object */;
+}
